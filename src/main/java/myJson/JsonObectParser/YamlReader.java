@@ -75,7 +75,7 @@ public class YamlReader {
         rewrite.dump(yamlPage, writer);
     }
 	public static void main(String[] args) throws IOException {
-		Main yamlReader = new Main("data.yml");
+		YamlReader yamlReader = new YamlReader("data.yml");
 		System.out.println(yamlReader.elementPath("users.user1.groups"));
 		yamlReader.valReplace("users.user1.groups","1111111");
 		System.out.println(yamlReader.elementPath("users.user1.groups"));
